@@ -1,0 +1,82 @@
+html {
+    font-size: 12px;
+}
+
+#branchContainer {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span, i {
+    cursor: pointer;
+}
+
+li {
+    padding: 5px;
+}
+
+span {
+    transition: all .25s;
+    border-bottom: 2px solid transparent;
+    margin-left: 15px;
+}
+
+span:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+span.selected-tree-item {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+i.collapsed:before {
+    content: '✔';
+    font-weight: bold;
+}
+
+i:before {
+    content: '+';
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled-tree-item {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
+
+.disabled-tree-item:hover {
+    color: gray;
+}
+
+table {
+    font-size: 1.5rem;
+}
+
+th, td {
+    border: 1px solid grey;
+    min-width: 200px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+td:nth-child(4) {
+    filter: blur(5px);
+}
+
+td:hover {
+    filter: blur(0px);
+}

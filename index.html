@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <button onclick="clearAll()">Clear All</button>
+    <div class="content">
+        <div id="branchContainer"></div>
+        <div>
+            <button onclick="clearTable()">Clear Table</button>
+            <select id="choice" onclick="convertion(this.value)">
+                <option value="byn">BYN</option>
+                <option value="usd">USD</option>
+            </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Tel</th>
+                        <th id="salary">Salary</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
